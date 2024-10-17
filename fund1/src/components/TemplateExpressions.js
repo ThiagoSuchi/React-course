@@ -4,7 +4,7 @@ const TemplateExpression = () => {
         idade: 21,
         cargo: 'Dev Front-end'
     }
-
+    
     return (
         <div>
             <h2>Fala rapaziadaa, sou o {nome}</h2>
