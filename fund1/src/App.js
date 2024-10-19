@@ -3,7 +3,7 @@ import FirstComponent from './components/firstComponents';
 import TemplateExpression from './components/TemplateExpressions';
 import { MyComponents } from './components/MyComponents';
 import { Events } from './components/Events';
-
+import { AddingNumbers } from './components/Challenge';
 // styles// CSS
 import './App.css';
 
@@ -16,6 +16,7 @@ function App() {
       <TemplateExpression/>
       <MyComponents/>
       <Events/>
+      <AddingNumbers/>
     </div>
   );
 
