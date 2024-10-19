@@ -1,3 +1,5 @@
+import { MyComponents } from "./MyComponents";
+
 // Outro comentario no escopo global
 const FirstComponent = () => {
 // Outro comentário
@@ -5,6 +7,7 @@ const FirstComponent = () => {
         <div>
             {/* Qualquer comentario */}
             <h2>Meu primeiro componente</h2>
+            <MyComponents/>
         </div>
     )
 
