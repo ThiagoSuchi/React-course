@@ -1,6 +1,9 @@
+// Componentes
+import ManageData from './components/ManageData';
 import './App.css';
 // Imagem importada do assets
 import Riu from "./assets/StreetFt.jpg"
+
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
         <div>
           <img src={Riu} alt="StretFighter" />
         </div>
+        <ManageData/>
     </div>
   );
 }
