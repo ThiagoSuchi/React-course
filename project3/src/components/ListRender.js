@@ -3,11 +3,21 @@ import { useState } from 'react'
 const ListRender = () => {
     const [list] = useState(['Douglas', 'Maria', 'Laura', 'Lavinia', 'Lucas', 'Matheus'])
 
-    const [users] = useState([
+    const [users, setUsers] = useState([// estrutura padrão do hook useState
         {id: 1, name: 'Thiago', age: 21},
-        {id: 72378423, name: 'Kauan', age: 20},
-        {id: 8328823, name: 'Amanda', age: 22}
+        {id: 2, name: 'Kauan', age: 20},
+        {id: 3, name: 'Amanda', age: 22}
     ]);
+
+    const deletarRandom = () => {
+        const randomNumber = Math.floor(Math.random() * 4);
+
+        // "Previous state" é o valor do estado antes de mudar.
+        setUsers((prevUsers) => {// (prevUsers) é o Previous state
+            console.log(prevUsers);
+            return prevUsers.filter((user) => randomNumber !== user.id);
+        });
+    };
 
     // OBS: O uso correto de key melhora o desempenho e evita renderizações desnecessárias e problemas com o estado local dos componentes.
     return (
@@ -26,6 +36,7 @@ const ListRender = () => {
                     </li>
                 ))}
             </ul>
+            <button onClick={deletarRandom}>Delete Random</button>
         </div>
 
     
