@@ -4,7 +4,7 @@ export const Events = () => {
         console.log(Event);
         console.log('Ativado!');
     }
-    // É possível taqmbém colocar JSX(JavaScript XML) fora do return, como podemos ver logo abaixo:
+    // É possível também colocar JSX(JavaScript XML) fora do return, como podemos ver logo abaixo:
     const renderSomething = (X) => {
         if(X)  {
             return <p>Renderizando isso! Pois o valor é true.</p>

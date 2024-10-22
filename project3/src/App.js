@@ -3,6 +3,7 @@ import ManageData from './components/ManageData';
 import './App.css';
 // Imagem importada do assets
 import Riu from "./assets/StreetFt.jpg"
+import ListRender from './components/ListRender';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <img src={Riu} alt="StretFighter" />
         </div>
         <ManageData/>
+        <ListRender/>
     </div>
   );
 }
