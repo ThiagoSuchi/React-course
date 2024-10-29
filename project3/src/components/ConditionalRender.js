@@ -1,7 +1,7 @@
 import { useState } from "react"
 
  export function ConditionalRender() {
-    const [x] = useState(false)
+    const [x] = useState(true)
 
     const [nome, setName] = useState("Matheus")
 
@@ -16,6 +16,7 @@ import { useState } from "react"
         {!x && <p>Agora o x é falso!</p>}
 
         {/* Condição ternário */}
+        <h1>Condição ternário</h1>
         {nome === "João" ? (
             <div>
                 <p>Seja bem-vindo João</p>
