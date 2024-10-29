@@ -1,6 +1,10 @@
 // Componentes
 import ManageData from './components/ManageData';
+import { ConditionalRender } from './components/ConditionalRender';
+
+// Styles
 import './App.css';
+
 // Imagem importada do assets
 import Riu from "./assets/StreetFt.jpg"
 import ListRender from './components/ListRender';
@@ -22,6 +26,7 @@ function App() {
         </div>
         <ManageData/>
         <ListRender/>
+        <ConditionalRender/>
     </div>
   );
 }
