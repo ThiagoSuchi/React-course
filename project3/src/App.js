@@ -1,17 +1,18 @@
 // Componentes
 import ManageData from './components/ManageData';
+import ListRender from './components/ListRender';
 import { ConditionalRender } from './components/ConditionalRender';
+import { ShowUserName } from './components/ShowUserName';
 
 // Styles
 import './App.css';
 
 // Imagem importada do assets
 import Riu from "./assets/StreetFt.jpg"
-import ListRender from './components/ListRender';
-import { ShowUserName } from './components/ShowUserName';
 
 // useState
 import { useState } from 'react';
+import { CarsDetails } from './components/CarsDetails';
 
 
 function App() {
@@ -34,7 +35,10 @@ function App() {
         <ManageData/>
         <ListRender/>
         <ConditionalRender/>
+        {/* Props */}
         <ShowUserName name={Name}/>
+        {/* Destructuring */}
+        <CarsDetails brand="Fiat" km={27.000}/>
     </div>
   );
 }
