@@ -16,7 +16,7 @@ const ListRender = () => {
         setUsers((prevUsers) => {// (prevUsers) é o Previous state
             console.log(prevUsers);
             return prevUsers.filter((user) => randomNumber !== user.id);
-        });
+        });// Esse código remove da lista users o usuário cujo id é igual ao valor de randomNumber.
     };
 
     // OBS: O uso correto de key melhora o desempenho e evita renderizações desnecessárias e problemas com o estado local dos componentes.
@@ -38,9 +38,6 @@ const ListRender = () => {
             </ul>
             <button onClick={deletarRandom}>Delete Random</button>
         </div>
-
-    
-           
        
     )
 
