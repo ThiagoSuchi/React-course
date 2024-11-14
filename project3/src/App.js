@@ -4,6 +4,7 @@ import ListRender from './components/ListRender';
 import { ConditionalRender } from './components/ConditionalRender';
 import { ShowUserName } from './components/ShowUserName';
 import Fragments from './components/Fragments';
+import Container from './components/Container';
 
 // Styles
 import './App.css';
@@ -14,6 +15,7 @@ import Riu from "./assets/StreetFt.jpg"
 // useState
 import { useState } from 'react';
 import { CarsDetails } from './components/CarsDetails';
+
 
 
 function App() {
@@ -59,6 +61,13 @@ function App() {
         ))}
         {/* Fragments */}
         <Fragments propFragment="Teste"/>
+        {/* Children */}
+        <Container myValue="My testing">
+            <h1>Este é o conteúdo</h1>
+        </Container>
+        <Container myValue="My testing 2">
+            <h5>Esse é o teste dois</h5>
+        </Container>
     </div>
   );
 }
