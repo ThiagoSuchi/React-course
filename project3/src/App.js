@@ -3,6 +3,7 @@ import ManageData from './components/ManageData';
 import ListRender from './components/ListRender';
 import { ConditionalRender } from './components/ConditionalRender';
 import { ShowUserName } from './components/ShowUserName';
+import Fragments from './components/Fragments';
 
 // Styles
 import './App.css';
@@ -16,7 +17,17 @@ import { CarsDetails } from './components/CarsDetails';
 
 
 function App() {
-  const [Name] = useState('Maria')
+  //Fetch -> API (texto)
+  //
+  const [Name] = useState('Maria'); 
+
+  const cars = [
+    {id: 1, brand: 'Ferrari', color: 'Vermelho', newCar: true, km: 0},
+    {id: 2, brand: 'Porsche 911', color: 'Preto', newCar: true, km: 0},
+    {id: 3, brand: 'Audi r8', color: 'Branco', newCar: true, km: 0},
+    {id: 4, brand: 'Bugatti', color: 'Vermelho vinho', newCar: false, km: 20000},
+    {id: 5, brand: 'Mustang GT Performance', color: 'Azul algarve', newCar: false, km: 55000},
+  ]
 
   return (
     <div className="App">
@@ -37,8 +48,17 @@ function App() {
         <ConditionalRender/>
         {/* Props */}
         <ShowUserName name={Name}/>
-        {/* Destructuring */}
-        <CarsDetails brand="Fiat" km={27.000}/>
+        {/* Destructuring em props*/}
+        <CarsDetails brand="Fiat" km={27000} newCar={false}/>
+        {/* Reaproveitando componente */}
+        <CarsDetails brand="Ford" color="Azul" km={0} newCar={true}/>
+        <CarsDetails brand="Chevrolet" color="Branco" km={10800} newCar={false}/>
+        {/* Renderização de lista em componente */}
+        {cars.map((car) => (
+          <CarsDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
+        ))}
+        {/* Fragments */}
+        <Fragments propFragment="Teste"/>
     </div>
   );
 }
