@@ -15,12 +15,13 @@ import Riu from "./assets/StreetFt.jpg"
 // useState
 import { useState } from 'react';
 import { CarsDetails } from './components/CarsDetails';
+import ExecutarFunction from './components/ExecutarFunction';
+import Message from './components/Message';
+import ChangeMessage from './components/ChangeMessage';
 
 
 
 function App() {
-  //Fetch -> API (texto)
-  //
   const [Name] = useState('Maria'); 
 
   const cars = [
@@ -30,6 +31,16 @@ function App() {
     {id: 4, brand: 'Bugatti', color: 'Vermelho vinho', newCar: false, km: 20000},
     {id: 5, brand: 'Mustang GT Performance', color: 'Azul algarve', newCar: false, km: 55000},
   ]
+  
+  function showMessage() {
+    console.log('Evento componente pai!');
+  }
+
+  const [message, setMessage] = useState("")
+  
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  }
 
   return (
     <div className="App">
@@ -57,7 +68,7 @@ function App() {
         <CarsDetails brand="Chevrolet" color="Branco" km={10800} newCar={false}/>
         {/* Renderização de lista em componente */}
         {cars.map((car) => (
-          <CarsDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
+          <CarsDetails key={car.id} brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
         ))}
         {/* Fragments */}
         <Fragments propFragment="Teste"/>
@@ -68,6 +79,11 @@ function App() {
         <Container myValue="My testing 2">
             <h5>Esse é o teste dois</h5>
         </Container>
+        {/* Function como prop */}
+        <ExecutarFunction myMessage={showMessage}/>
+        {/* State lift */}
+        <Message msg={message}/>
+        <ChangeMessage handleMessage={handleMessage}/>
     </div>
   );
 }
