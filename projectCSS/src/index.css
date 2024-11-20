@@ -12,3 +12,16 @@ h1 {
 p {
   background: antiquewhite;
 }
+
+.red-title {
+  background: rgb(189, 189, 189);
+  color: rgb(78, 78, 78);
+  border: 3px solid rgb(75, 75, 75);
+}
+
+.title {
+  background: grey;
+  color: rgb(17, 100, 17);
+  border: 3px solid rgb(52, 136, 56);
+}
+

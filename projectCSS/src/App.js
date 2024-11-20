@@ -5,6 +5,7 @@ import { useState } from "react";
 function App() {
   const n = 12;
   const [name] = useState("Isabelle")
+  const redName = true
 
   return (
     <div className="App">
@@ -26,6 +27,9 @@ function App() {
           : null
         }>
      {name}</p>
+     {/* Classe dinâmica */}
+     <h2 className={ redName ? "red-title" : "title"}>Este é um h2 para testar classe dinâmica</h2>
+     <h2 className={!redName ? "red-title" : "title"}>Este é um h2 para testar classe dinâmica</h2>
     </div>
   );
 }
