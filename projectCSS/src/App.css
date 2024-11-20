@@ -1,14 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  color: rebeccapurple;
-}
-
-p {
-  background: antiquewhite;
+.App {
+  text-align: center;
 }
