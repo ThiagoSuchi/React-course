@@ -14,15 +14,17 @@ function App() {
   return (
     <div className="App">
       <h1>Tab <span>Cars</span></h1>
-      {carros.map((car) => (
-        <CarDetails 
+      <div className="tabelaCarros">
+        {carros.map((car) => (
+          <CarDetails 
             key={car.id} 
             brand={car.brand} 
             color={car.color}
             age={car.age}
             km={car.km}
-        />
-      ))}
+          />
+        ))}
+      </div>
     </div>
   );
 };

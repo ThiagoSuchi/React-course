@@ -1,10 +1,17 @@
 body {
   text-align: center;
-  background: radial-gradient(circle, #e6c395, #6b3809 );
+  background: radial-gradient(circle, #c9aa82, #6b3809 );
+}
+
+.tabelaCarros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h1 {
-  color: #cacaca;
+  color: #d6d6d6;
 }
 
 h1 span {
