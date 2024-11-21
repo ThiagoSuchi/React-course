@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  background: radial-gradient(circle, #e6c395, #6b3809 );
+}
+
+h1 {
+  color: #cacaca;
+}
+
+h1 span {
+  color: rgb(70, 46, 1);
+  border-radius: 30px;
+  outline: 2px solid #cacaca;
+  outline-offset: 4px;
+}

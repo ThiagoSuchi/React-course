@@ -1,0 +1,43 @@
+.tabCars {
+    background: rgb(236, 236, 236);
+    text-align: center;
+    width: 20%;
+    padding: 2rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.tabCars:hover {
+    transform: scale(1.02);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+h2 {
+    color: rgb(148, 102, 17);
+    margin-bottom: 2rem;
+    padding:  1rem;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid rgb(206, 206, 206);
+    transition: .2s ease-in-out;
+}
+
+h2:hover {
+    transform: scale(1.03);
+    color: rgb(163, 131, 72);
+}
+
+p {
+    color: rgb(148, 102, 17);
+    transition: .2s;
+}
+
+p span {
+    font-weight: 600;
+}
+
+p:hover {
+    color: rgb(184, 147, 79);
+}
