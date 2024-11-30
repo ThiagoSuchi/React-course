@@ -1,10 +1,11 @@
 import "./MyForm.css";
 import { useState } from "react";
 
-const MyForm = () => {
+const MyForm = ({user}) => {
+  // 6 - Controlled inputs
   // 3 - gerenciamento de dados
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
+  const [name, setName] = useState(user ? user.name : '');
+  const [email, setEmail] = useState(user ? user.email : '');
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -14,6 +15,10 @@ const MyForm = () => {
     evento.preventDefault()
     console.log('Enviando o e-mail');
     console.log(name, email); 
+
+    // 7 - Limpando form
+    setName("");
+    setEmail("");
   }
 
   return (
@@ -27,7 +32,8 @@ const MyForm = () => {
             type="text"
             name="name"
             placeholder="Digite seu nome"
-            onChange={handleName}
+            onChange={handleName}//  É um manipulador de eventos que é acionado toda vez que o valor do campo muda.
+            value={name}//  Define o valor atual do campo de formulário.
           />
         </div>
         {/* 2 - Label envolvendo input */}
@@ -39,6 +45,7 @@ const MyForm = () => {
              name="email" 
              placeholder="Digite seu e-mail" 
              onChange={(e) => setEmail(e.target.value)}
+             value={email}
            />
         </label>
         <input type="submit" value="Enviar" />
