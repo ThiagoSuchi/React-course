@@ -7,5 +7,23 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg, rgb(178, 255, 171) 0%, rgb(6, 61, 0)100%);
-  color: rgb(114, 158, 84);
+  color: rgb(93, 145, 77);
+}
+
+button {
+  background: rgb(93, 131, 81);
+  color: white;
+  padding: 0 45px;
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: .4s;
+}
+
+button:hover {
+  background:  rgb(59, 82, 51);
 }
