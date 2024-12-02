@@ -1,0 +1,11 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(178, 255, 171) 0%, rgb(6, 61, 0)100%);
+  color: rgb(114, 158, 84);
+}
