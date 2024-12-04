@@ -1,8 +1,11 @@
 import "./Game.css";
 
-const Game = () => {
+const Game = ({ verifyLatter }) => {
   return (
-    <div>Game</div>
+    <div>
+      <h1>Game</h1>
+      <button onClick={verifyLatter}>Finalizar jogo</button>
+    </div>
   )
 }
 
