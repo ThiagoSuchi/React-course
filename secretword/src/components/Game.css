@@ -7,7 +7,7 @@
 }
 
 .tip span {
-    color:rgb(255, 255, 255);
+    color:rgb(217, 255, 0);
 }
 
 .wordContainer {
@@ -31,7 +31,7 @@
 }
 
 .letterContainer p {
-    color: rgb(210, 252, 156);
+    color: rgb(26, 78, 24);
     margin-bottom: 1.2em;
 }
 
@@ -47,15 +47,13 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
-}
-
-.wrongLettersContainer span {
-    color: rgb(255, 255, 255);
-}
-
-form input {
     border: none;
     border-radius: 10px;
     background-color: rgb(234, 255, 215);
     border: 3px solid rgb(42, 100, 40)
 }
+
+.wrongLettersContainer span {
+    color: rgb(210, 255, 172);
+}
+
