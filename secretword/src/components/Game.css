@@ -7,29 +7,31 @@
 }
 
 .tip span {
-    color: rgb(251, 255, 0);
+    color:rgb(255, 255, 255);
 }
 
 .wordContainer {
     margin:  1.5em;
     padding: 1.5em;
-    border: 20px solid rgb(251, 255, 0);
+    border: 20px solid rgb(42, 100, 40);
     display: flex;
 }
 
 .letter, .blankSquare {
     font-size: 70px;
     line-height: 1.5;
-    border: 3px solid black;
+    border: 3px solid rgb(42, 100, 40);
     height: 100px;
     width: 100px;
     text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(234, 255, 215);
     color: black;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .letterContainer p {
+    color: rgb(210, 252, 156);
     margin-bottom: 1.2em;
 }
 
@@ -45,4 +47,15 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+}
+
+.wrongLettersContainer span {
+    color: rgb(255, 255, 255);
+}
+
+form input {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(234, 255, 215);
+    border: 3px solid rgb(42, 100, 40)
 }
