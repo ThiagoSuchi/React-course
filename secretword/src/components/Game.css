@@ -1,26 +1,32 @@
 .game h1 {
+    color: rgb(44, 70, 141);
     font-size: 2.5em;
 }
 
+.game p {
+    color: rrgb(68, 138, 66);
+}
+
 .points span {
+    color: rgb(68, 138, 66);
     font-weight: bold;
 }
 
 .tip span {
-    color:rgb(217, 255, 0);
+    color:rgb(255, 251, 0);
 }
 
 .wordContainer {
     margin:  1.5em;
     padding: 1.5em;
-    border: 20px solid rgb(42, 100, 40);
+    border: 20px solid rgb(44, 70, 141);
     display: flex;
 }
 
 .letter, .blankSquare {
     font-size: 70px;
     line-height: 1.5;
-    border: 3px solid rgb(42, 100, 40);
+    border: 3px solid rgb(44, 70, 141);
     height: 100px;
     width: 100px;
     text-transform: uppercase;
@@ -31,7 +37,7 @@
 }
 
 .letterContainer p {
-    color: rgb(26, 78, 24);
+    color: rgb(29, 54, 29);
     margin-bottom: 1.2em;
 }
 
