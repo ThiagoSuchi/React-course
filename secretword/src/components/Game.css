@@ -4,7 +4,7 @@
 }
 
 .game p {
-    color: rrgb(68, 138, 66);
+    color: rgb(68, 138, 66);
 }
 
 .points span {
@@ -20,7 +20,7 @@
 .wordContainer {
     margin:  1.5em;
     padding: 1.5em;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 20px solid rgb(44, 70, 141);
     display: flex;
 }
@@ -35,7 +35,7 @@
     background-color: rgb(234, 255, 215);
     color: black;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .letterContainer p {
