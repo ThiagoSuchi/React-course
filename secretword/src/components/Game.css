@@ -1,5 +1,5 @@
 .game h1 {
-    color: rgb(44, 70, 141);
+    color: rgb(68, 138, 66);
     font-size: 2.5em;
 }
 
@@ -13,7 +13,8 @@
 }
 
 .tip span {
-    color:rgb(255, 251, 0);
+    color:rgb(44, 70, 141);
+    font-weight: bold;
 }
 
 .wordContainer {
