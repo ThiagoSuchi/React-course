@@ -1,24 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 59.90
-        },
-        {
-            "id": 2,
-            "name": "Shorts",
-            "price": 79.90
-        },
-        {
-            "id": 3,
-            "name": "Boné",
-            "price": 100.00
-        },
-        {
-            "id": 4,
-            "name": "Meia",
-            "price": 29.90
-        }
-    ]
+  "products": [
+    {
+      "id": "5ee3",
+      "name": "Camisa - Nike",
+      "price": "150.90"
+    },
+    {
+      "id": "a886",
+      "name": "Shorts tectell",
+      "price": "350.50"
+    },
+    {
+      "id": "c288",
+      "name": "Boné - Nike",
+      "price": "95"
+    },
+    {
+      "id": "ea6a",
+      "name": "Tênis Adidas Esportivo",
+      "price": "360.95"
+    },
+    {
+      "id": "8ceb",
+      "name": "Meia Adidas - cano alto",
+      "price": "38"
+    }
+  ]
 }
