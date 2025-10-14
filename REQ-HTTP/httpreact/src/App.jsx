@@ -5,13 +5,13 @@ import { useState, useEffect } from 'react';
 // 4  custom hook
 import { useFetch } from './hooks/useFetch';
 
-const url = "http://localhost:3000/products";
+const url = "http://localhost:3001/products";
 
 function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - custom hook
-  const { data: items, httpConfig, loading } = useFetch(url);
+  const { data: items, httpConfig, loading, error } = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -61,6 +61,7 @@ function App() {
       <h1>Lista de produtos</h1>
       {/* 6 - Loading */}
       {loading && <p>Carregando dados...</p>}
+      {error && <p>{error}</p>}
       {!loading && (
         <ul>
           {items && items.map((product) => (
@@ -87,7 +88,9 @@ function App() {
               name='price'
               onChange={(e) => setPrice(e.target.value)}
             />
-            <input type="submit" value="Criar" />
+            {/* 7 - State de loading no post */}
+            {loading && <input type="submit" disabled value="Aguarde" />}
+            {!loading && <input type="submit" value="Criar" />}
           </label>
         </form>
       </div>

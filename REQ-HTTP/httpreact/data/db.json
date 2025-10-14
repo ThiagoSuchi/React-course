@@ -39,6 +39,16 @@
       "id": "cb28",
       "name": "Boné de praia Nike",
       "price": "95"
+    },
+    {
+      "id": "13f8",
+      "name": "Fones de ouvido ",
+      "price": "100"
+    },
+    {
+      "id": "4c8e",
+      "name": "Suporte de notebook",
+      "price": "250"
     }
   ]
 }
