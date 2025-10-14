@@ -24,6 +24,21 @@
       "id": "8ceb",
       "name": "Meia Adidas - cano alto",
       "price": "38"
+    },
+    {
+      "id": "4fd1",
+      "name": "Chinelo Havaianas",
+      "price": "68"
+    },
+    {
+      "id": "574a",
+      "name": "Tênis Mizuno",
+      "price": "250"
+    },
+    {
+      "id": "cb28",
+      "name": "Boné de praia Nike",
+      "price": "95"
     }
   ]
 }
