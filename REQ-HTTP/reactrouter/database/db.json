@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": "2ee3",
+            "name": "Guarda Chuva",
+            "price": 50
+        },
+        {
+            "id": "y44u",
+            "name": "Porta Copos",
+            "price": 35.90
+        },
+        {
+            "id": "bt43",
+            "name": "Livro",
+            "price": 150
+        },
+        {
+            "id": "12c3",
+            "name": "Garrafinha Térmica",
+            "price": 89.90
+        },
+        {
+            "id": "dd7y",
+            "name": "Kit Pesca",
+            "price": 260.90
+        },
+        {
+            "id": "23py",
+            "name": "Bola de Futsal",
+            "price": 345.90
+        }
+    ]
+}
