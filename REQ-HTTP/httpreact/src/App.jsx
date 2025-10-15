@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 // 4  custom hook
 import { useFetch } from './hooks/useFetch';
 
-const url = "http://localhost:3001/products";
+const url = "http://localhost:3000/products";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -56,6 +56,11 @@ function App() {
     setPrice("");
   }
 
+  // 8 - desafio 6
+  function handleRemove(id) {
+    httpConfig(id, "DELETE");
+  }
+
   return (
     <>
       <h1>Lista de produtos</h1>
@@ -67,6 +72,7 @@ function App() {
           {items && items.map((product) => (
             <li key={product.id}>
               {product.name} - R$ {product.price}
+              <button onClick={() => handleRemove(product.id)}>Excluir</button>
             </li>
           ))}
         </ul>
@@ -90,7 +96,7 @@ function App() {
             />
             {/* 7 - State de loading no post */}
             {loading && <input type="submit" disabled value="Aguarde" />}
-            {!loading && <input type="submit" value="Criar" />}
+            {!loading && <input type="submit" value="Adicionar" />}
           </label>
         </form>
       </div>
