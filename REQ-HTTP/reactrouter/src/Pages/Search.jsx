@@ -11,6 +11,8 @@ const Search = () => {
     return (
         <div>
             <h1>Resultados encontrados</h1>
+            {error && <p>Ocorreu um erro...</p>}
+            {loading && <p>Carregando...</p>}
             <ul className="products">
                 {items && items.map((item) => (
                     <li key={item.id}>

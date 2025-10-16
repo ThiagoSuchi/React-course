@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 const SearchForm = () => {
+    /*
+    * useNavigate - É usado quando você quer redirecionar o usuário para outra rota 
+    * via código, e não clicando em um <Link>.
+    */
     const navigate = useNavigate();
     const [query, setQuery] = useState("");
 
