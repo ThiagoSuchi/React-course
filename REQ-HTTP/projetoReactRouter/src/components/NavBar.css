@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    gap: 5rem;
+}
+
+nav a {
+    cursor: pointer;
+    color: rgb(189, 150, 78);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: wheat;
+}
+
+.active {
+    border-bottom: 1px outset white;
+}
