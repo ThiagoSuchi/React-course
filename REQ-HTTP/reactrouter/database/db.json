@@ -29,6 +29,21 @@
             "id": "23py",
             "name": "Bola de Futsal",
             "price": 345.90
+        },
+            {
+            "id": "ttx9",
+            "name": "Caixa Térmica",
+            "price": 125
+        },
+        {
+            "id": "33la",
+            "name": "Lanterna Tática",
+            "price": 95.80
+        },
+        {
+            "id": "ppp1",
+            "name": "Par de Meia Preta Impermeável",
+            "price": 30.50
         }
     ]
 }
