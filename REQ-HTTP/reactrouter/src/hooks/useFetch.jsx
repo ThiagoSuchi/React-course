@@ -69,7 +69,7 @@ export const useFetch = (url) => {
             if (method === "POST") {
                 const res = await fetch(url, config);
                 const json = await res.json();
-                
+
                 setCallFetch(json);
 
             } else if (method === "DELETE") {
