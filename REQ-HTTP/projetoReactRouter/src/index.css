@@ -19,3 +19,17 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+button {
+  background-color: rgb(189, 150, 78);
+  color: #242424;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  transition: .1s all ease-in;
+}
+
+button:hover {
+  background-color: rgb(221, 195, 147);
+}
