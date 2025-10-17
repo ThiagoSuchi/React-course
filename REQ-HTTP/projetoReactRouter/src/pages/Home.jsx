@@ -9,11 +9,10 @@ import { useCounterContext } from "../hooks/useCounterContext";
 import { useTitleColorContext } from "../hooks/useTitleColorContext";
 
 const Home = () => {
+    const { color } = useTitleColorContext();
+
     // const { counter } = useContext(CounterContext);
     const { counter } = useCounterContext();
-
-    // 5 - contexto mais complexo
-    const { color } = useTitleColorContext();
 
     return (
         <div>
