@@ -1,7 +1,11 @@
+import { useTitleColorContext } from "../hooks/useTitleColorContext"
+
 const About = () => {
+  const { color } = useTitleColorContext();
+
   return (
     <div>
-        <h1>About</h1>
+        <h1 style={{ color: color }}>About</h1>
     </div>
   )
 }
