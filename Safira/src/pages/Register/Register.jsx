@@ -4,15 +4,16 @@ import { useState, useEffect } from 'react';
 
 function Register() {
     return (
-        <div>
+        <div className={styles.register}>
             <h1>Cadastre-se</h1>
-            <p>Crie seu usuário e compartilhe suas histórias.</p>
+            <p>Crie conexões, conte suas histórias e compartilhe seu lifestyle.</p>
             <form>
                 <label>
                     <span>Nome:</span>
                     <input
                         type="text"
                         name='displayName'
+                        placeholder='Insira o nome completo'
                         required
                     />
                 </label>
@@ -41,7 +42,9 @@ function Register() {
                         required
                     />
                 </label>
-                <button className='btn'>Cadastrar</button>
+                <div className='btn-div'>
+                    <button className='btn'>Cadastrar</button>
+                </div>
             </form>
         </div>
     )

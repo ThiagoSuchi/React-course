@@ -38,6 +38,13 @@
 }
 
 .active {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border: 1px solid transparent;
   color: #242424;
+}
+
+.active:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
 }

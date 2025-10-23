@@ -1,7 +1,9 @@
 .register {
+    margin: 5rem 0 12rem;
     text-align: center;
 }
 
 .register p {
+    margin-bottom: 6rem;
     color: #aaa;
 }
