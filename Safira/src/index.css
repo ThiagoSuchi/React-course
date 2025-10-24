@@ -38,6 +38,10 @@ nav button:hover {
   color: #bbb;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 form {
   max-width: 40%;
   margin: 0 auto;
@@ -117,10 +121,9 @@ button[disabled] {
 }
 
 .container .error {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
+  color: #ca4343;
+  background-color: #3a1f1f;
+  border: 1px solid #ca4343;
   padding: 5px;
-  border-radius: 5px;
 }
 
